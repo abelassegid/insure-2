@@ -1,3 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 1.6rem; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px; }
+
+.header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; }
+
+.header {
+  padding: 1.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  .header .menu li {
+    display: inline-block; }
+  .header .menu a {
+    font-size: 1.3rem;
+    font-family: "Karla", serif;
+    font-weight: bold;
+    padding: 1.35rem 2.5rem;
+    display: block;
+    color: #837D88;
+    text-transform: uppercase; }
+    .header .menu a:hover {
+      border: 1.5px solid #2C2830;
+      background-color: #2C2830;
+      color: white; }
+  .header .menu .last-link {
+    border: 1.5px solid #2C2830;
+    color: #2C2830; }
+  .header .menu-btn {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: none;
+    border: 2px solid #2C2830; }
+
+img {
+  width: 100%; }
+
+@media (max-width: 700px) {
+  .grid {
+    display: block; } }
+@media (max-width: 700px) {
+  .menu {
+    display: none; }
+
+  .header {
+    padding: 2.5rem 0; }
+
+  .header .menu-btn {
+    display: block;
+    margin-right: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+
+  .menu-btn .hamburger {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: #2C2830;
+    position: relative; }
+
+  .menu-btn .hamburger::after {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: #2C2830;
+    top: 7px;
+    content: "";
+    position: absolute; }
+
+  .menu-btn .hamburger::before {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: #2C2830;
+    top: -7px;
+    content: "";
+    position: absolute; }
+
+  .active.menu {
+    display: block;
+    position: absolute;
+    background-color: #2C2830;
+    top: 65px;
+    width: 100%;
+    padding: 4rem; }
+    .active.menu li {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem; }
+    .active.menu a {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 3rem;
+      font-family: "Karla", serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 1.36px; }
+
+  .header .last-link a {
+    border: 1.5px solid white; }
+
+  .menu-btn .cross.hamburger {
+    background-color: transparent; }
+
+  .menu-btn .cross.hamburger::after {
+    top: 0px;
+    transform: rotate(45deg); }
+
+  .menu-btn .cross.hamburger::before {
+    top: 0px;
+    transform: rotate(-45deg); } }
 
 /*# sourceMappingURL=style.css.map */
